@@ -18,3 +18,13 @@ string PrintArray(string[] array)
   return result;
 }
 
+int CheckArray(string[] array, int lengthLimit)
+{
+  int result = 0;
+  for (int i = 0; i < array.Length; i++)
+  {
+    if (array[i].Length <= lengthLimit) result++;
+  }
+  return result;
+}
+
